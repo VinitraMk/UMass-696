@@ -102,9 +102,10 @@ $$ATT + BIAS$$
 When presented with data, we think that there lies some bias which means $E[Y_0 | T = 1] > E[Y_0 | T = 0]$. This means, that
 the outcome i.e performance of student would be greater than the performance of the students who were not given tablet, regardless of the tablet 
 administration due to other factors. The goal of causal inference is reducing the bias so the cause and effect links can be established.\\
-Now let's say $E[Y_0 | T = 1] = E[Y_0 | T = 0]$. This implies that the outcome of the students who were given tablets,
+Now let's say $E[Y_0 | T = 1] = E[Y_0 | T = 0]$ i.e there is no bias and the treated and controlled groups are comparable.
+This implies that the outcome of the students who were given tablets,
 matches the performance of the students without the tablet, if the tablet was taken away from the former. This means association is equal to causation.
-This means that $E[Y_0 | T = 1]$ and $E[Y_0 | T = 0]$ are interchangeable. Now consider the average treatement effect;\\
+This also means that $E[Y_0 | T = 1]$ and $E[Y_0 | T = 0]$ are interchangeable. Now consider the average treatement effect;\\
 $$ATE = E[Y_1 - Y_0]$$
 $$E[Y_1 | T = 1] - E[Y_0 | T = 0]$$
 $$E[Y_1 | T = 1] - E[Y_0 | T = 1]$$
